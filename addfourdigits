@@ -1,0 +1,36 @@
+package Exercises;
+import java.util.Scanner;
+
+public class Addfourdigits {
+
+	public static void main(String args[])
+	    {
+	    	// initializing and declaring the objects.
+
+		int num, rem=0, sum=0;
+	        Scanner scan = new Scanner(System.in);
+			
+	        // enter number here.
+	        System.out.print("Enter the Number : ");
+	        num = scan.nextInt();
+			if(num<9999)
+			{
+	        while(num>0)
+	        {
+	            rem = num%10;
+	            sum = sum+rem;
+	            num = num/10;
+	        }
+			
+	        System.out.print("Sum of Digits is : " +sum);        
+	        }
+			else
+			{
+				System.out.println("Please enter 4 digit number");
+			}
+	    }
+}
+
+
+
+
